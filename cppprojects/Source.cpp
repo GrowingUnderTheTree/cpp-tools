@@ -6,11 +6,15 @@
 #include "Help.h"
 #include "circarea.h"
 #include "sphere.h"
+#include "pythagoras.h"
+#include "createfile.h"
 using namespace std;
 class numberguessr;
 class Help;
 class CircleArea;
 class spherevol;
+class pythagorastheorem;
+class filecreate;
 
 
 
@@ -30,11 +34,16 @@ int main() {
 		}else if (input == "Circlearea") {
 			CircleArea ca;
 			ca.circarea();
-		}
-		else if (input == "Spherevolume") {
+		}else if (input == "Spherevolume") {
 			spherevol sv;
 			sv.volume();
-		}else{
+		}else if (input == "pythagoras") {
+			pythagorastheorem pyt;
+			pyt.pt();
+		}else if (input == "createfile") {
+			filecreate fc;
+			fc.cf();
+		}else {
 			cout << "Please type out 'help' for help \n";
 		}
 	}

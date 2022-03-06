@@ -23,13 +23,13 @@ public:
 		cout << "The number you input is : " << x << "\n";
 		cout << "The correct number is : " << random << "\n";
 		if (x == random) {
-			cout << "Congratulations!, you guessed the number correctly! ";
+			cout << "Congratulations!, you guessed the number correctly! \n";
 		}
 		else if (x > 10) {
-			cout << "Please enter the number between Zero to Ten";
+			cout << "Please enter the number between Zero to Ten \n";
 		}
 		else {
-			cout << "You guessed the wrong number! Maybe next time?";
+			cout << "You guessed the wrong number! Maybe next time? \n";
 		}
 	}
 	//Yes this is for a test
