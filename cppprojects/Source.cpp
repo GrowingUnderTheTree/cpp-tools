@@ -9,6 +9,7 @@
 #include "pythagoras.h"
 #include "createfile.h"
 #include "coeff.h"
+#include "entropy.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -17,6 +18,7 @@ class spherevol;
 class pythagorastheorem;
 class filecreate;
 class coeff;
+class password;
 
 
 
@@ -48,7 +50,11 @@ int main() {
 		}else if (input == "coeffecientcounter") {
 			coeff co;
 			co.coeffecient();
-		} else{
+		}
+		else if (input == "passwordentropy") {
+			password pa;
+			pa.passwordentropy();
+		}else {
 			cout << "Please type out 'help' for help \n";
 		}
 	}
