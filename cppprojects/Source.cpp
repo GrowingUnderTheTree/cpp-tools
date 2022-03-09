@@ -8,6 +8,7 @@
 #include "sphere.h"
 #include "pythagoras.h"
 #include "createfile.h"
+#include "coeff.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -15,6 +16,7 @@ class CircleArea;
 class spherevol;
 class pythagorastheorem;
 class filecreate;
+class coeff;
 
 
 
@@ -43,7 +45,10 @@ int main() {
 		}else if (input == "createfile") {
 			filecreate fc;
 			fc.cf();
-		}else {
+		}else if (input == "coeffecientcounter") {
+			coeff co;
+			co.coeffecient();
+		} else{
 			cout << "Please type out 'help' for help \n";
 		}
 	}
