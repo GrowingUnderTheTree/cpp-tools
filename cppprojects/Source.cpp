@@ -50,8 +50,7 @@ int main() {
 		}else if (input == "coeffecientcounter") {
 			coeff co;
 			co.coeffecient();
-		}
-		else if (input == "passwordentropy") {
+		}else if (input == "passwordentropy") {
 			password pa;
 			pa.passwordentropy();
 		}else {
