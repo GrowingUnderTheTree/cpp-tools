@@ -18,5 +18,6 @@ public:
 		cout << "Enter 'createfile' to create a file \n";
 		cout << "Enter 'coeffecientcounter' to calculate coeffecient\n";
 		cout << "Enter 'passwordentropy' to calculate the entropy bits of your passwords\n";
+		cout << "Enter 'factor' to factorize quadratics \n";
 	}
 };

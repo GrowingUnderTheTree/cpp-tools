@@ -38,23 +38,23 @@ public:
 		}
 		These rows is used to debug
 		*/
-		int sumx = 0;
+		double sumx = 0;
 		sumx = accumulate(xval, xval+lim, sumx);
 		cout << "The sum for x values is : " << sumx << "\n";
-		int sumy = 0;
+		double sumy = 0;
 		sumy = accumulate(yval, yval + lim, sumy);
 		cout << "the sum for y values is : " << sumy << "\n";
-		int squarex = 0;
+		double squarex = 0;
 		for (int i = 0; i < lim; i++) {
 			squarex += xval[i] * xval[i];
 		}
 		cout << "the sum of square x values is : " << squarex << "\n";
-		int squarey = 0;
+		double squarey = 0;
 		for (int i = 0; i < lim; i++) {
 			squarey += yval[i] * yval[i];
 		}
 		cout << "the sum of square y values is : " << squarey << "\n";
-		int xysum = 0;
+		double xysum = 0;
 		for (int i = 0; i < lim; i++) {
 			xysum += xval[i] * yval[i];
 		}

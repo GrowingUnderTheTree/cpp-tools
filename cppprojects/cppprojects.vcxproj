@@ -146,6 +146,7 @@
     <ClInclude Include="coeff.h" />
     <ClInclude Include="createfile.h" />
     <ClInclude Include="entropy.h" />
+    <ClInclude Include="factoringquadratic.h" />
     <ClInclude Include="Help.h" />
     <ClInclude Include="numberguess.h" />
     <ClInclude Include="pythagoras.h" />

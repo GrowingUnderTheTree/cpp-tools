@@ -11,7 +11,7 @@ class password;
 class password {
 public:
 	void passwordentropy() {
-		int r, l;
+		double r, l;
 		cout << "Enter the pool of unique character (Eg. A-Z = 26): \n";
 		cin >> r;
 		cout << "Enter the numbers of characters in your password: \n";
