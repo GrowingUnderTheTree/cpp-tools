@@ -47,5 +47,8 @@
     <ClInclude Include="factoringquadratic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="factorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -10,7 +10,6 @@
 #include "createfile.h"
 #include "coeff.h"
 #include "entropy.h"
-#include "factoringquadratic.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -20,7 +19,6 @@ class pythagorastheorem;
 class filecreate;
 class coeff;
 class password;
-class quadratic;
 
 
 
@@ -55,10 +53,7 @@ int main() {
 		}else if (input == "passwordentropy") {
 			password pa;
 			pa.passwordentropy();
-		}else if (input == "factor") {
-			quadratic qa;
-			qa.factor();
-		}else {
+		}else{
 			cout << "Please type out 'help' for help \n";
 		}
 	}
