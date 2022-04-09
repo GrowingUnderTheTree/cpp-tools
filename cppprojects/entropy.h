@@ -20,6 +20,6 @@ public:
 		cout << "The total possible number of your password is : " << possible << "\n";
 		long long entropy = log2(possible);
 		cout << "The entropy of your password is : " << entropy << " bits of entropy per character. \n";
-		//loga(y)=x is equivalent to a power of x = y
+		//logA(y)=x is equivalent to A power of x = y
 	}
 };
