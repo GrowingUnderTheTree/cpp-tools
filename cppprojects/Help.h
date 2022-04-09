@@ -20,5 +20,6 @@ public:
 		cout << "Enter 'passwordentropy' to calculate the entropy bits of your passwords\n";
 		cout << "Enter 'factor' to factorize quadratics \n";
 		cout << "Enter 'factorial' to calculate factorial \n";
+		cout << "Enter 'linearregression' to calculate Linear regression \n";
 	}
 };

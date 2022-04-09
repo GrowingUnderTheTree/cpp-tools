@@ -50,5 +50,8 @@
     <ClInclude Include="factorial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="multiplereg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

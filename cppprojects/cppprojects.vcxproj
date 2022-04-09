@@ -150,6 +150,7 @@
     <ClInclude Include="factorial.h" />
     <ClInclude Include="factoringquadratic.h" />
     <ClInclude Include="Help.h" />
+    <ClInclude Include="multiplereg.h" />
     <ClInclude Include="numberguess.h" />
     <ClInclude Include="pythagoras.h" />
     <ClInclude Include="sphere.h" />

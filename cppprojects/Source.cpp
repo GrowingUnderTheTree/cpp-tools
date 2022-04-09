@@ -10,6 +10,7 @@
 #include "createfile.h"
 #include "coeff.h"
 #include "entropy.h"
+#include "multiplereg.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -19,6 +20,7 @@ class pythagorastheorem;
 class filecreate;
 class coeff;
 class password;
+class linearreg;
 
 
 
@@ -32,28 +34,40 @@ int main() {
 		if (input == "Numberguesser") {
 			numberguesr gues;
 			gues.guessit();
-		}else if (input=="help") {
+		}
+		else if (input=="help") {
 			Help help;
 			help.helpme();
-		}else if (input == "Circlearea") {
+		}
+		else if (input == "Circlearea") {
 			CircleArea ca;
 			ca.circarea();
-		}else if (input == "Spherevolume") {
+		}
+		else if (input == "Spherevolume") {
 			spherevol sv;
 			sv.volume();
-		}else if (input == "pythagoras") {
+		}
+		else if (input == "pythagoras") {
 			pythagorastheorem pyt;
 			pyt.pt();
-		}else if (input == "createfile") {
+		}
+		else if (input == "createfile") {
 			filecreate fc;
 			fc.cf();
-		}else if (input == "coeffecientcounter") {
+		}
+		else if (input == "coeffecientcounter") {
 			coeff co;
 			co.coeffecient();
-		}else if (input == "passwordentropy") {
+		}
+		else if (input == "passwordentropy") {
 			password pa;
 			pa.passwordentropy();
-		}else{
+		}
+		else if (input == "linearregression") {
+			linearreg lr;
+			lr.linreg();
+		}
+		else {
 			cout << "Please type out 'help' for help \n";
 		}
 	}
