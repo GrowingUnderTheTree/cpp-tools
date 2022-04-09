@@ -8,6 +8,7 @@
 #include <cmath>
 using namespace std;
 class linearreg;
+class regr;
 
 class linearreg {
 public:
@@ -71,7 +72,7 @@ public:
 		{
 			cin >> y[i];
 		}
-		int input;
+		double input;
 		double sumx = 0;
 		sumx = accumulate(x, x + lim, sumx);
 		cout << "The sum of x is : " << sumx << "\n";
@@ -103,9 +104,9 @@ public:
 		double b = btop / blower;
 		cout << "The coeffecient of a is : " << a << "\n";
 		cout << "The coeffecient of b is : " << b << "\n";
-		cout << "Linear regression formula is : y = a + b * x. Please enter a number in x or y values to predict the values of opposite values.";
+		cout << "Linear regression formula is : y = a + b * x.\n Please enter a number in x or y values to predict the values of opposite values.\n";
 		cin >> input;
-		double y = a + b * input;
-		cout << "The value is " << y;
+		double yes = a + b * input;
+		cout << "The value is " << yes << "\n";
 	}
 };

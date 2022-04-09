@@ -21,6 +21,7 @@ class filecreate;
 class coeff;
 class password;
 class linearreg;
+class regr;
 
 
 
@@ -64,7 +65,7 @@ int main() {
 			pa.passwordentropy();
 		}
 		else if (input == "linearregression") {
-			linearreg lr;
+			regr lr;
 			lr.linreg();
 		}
 		else {
