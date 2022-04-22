@@ -11,6 +11,7 @@
 #include "coeff.h"
 #include "entropy.h"
 #include "multiplereg.h"
+#include "linearregressiontestvalue.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -22,13 +23,13 @@ class coeff;
 class password;
 class linearreg;
 class regr;
-
+class testvalue;
 
 
 int main() {
 	while (true)
 	{
-		int x;
+		//int x;
 		string input;
 		cout << "Please enter the specific command to perform a specific task.\n Please type out 'help' for help : ";
 		cin >> input;
@@ -67,6 +68,10 @@ int main() {
 		else if (input == "linearregression") {
 			regr lr;
 			lr.linreg();
+		}
+		else if (input == "testvalue") {
+			testvalue tv;
+			tv.tvalue();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";

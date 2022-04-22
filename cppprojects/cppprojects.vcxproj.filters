@@ -53,5 +53,8 @@
     <ClInclude Include="multiplereg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="linearregressiontestvalue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
