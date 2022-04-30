@@ -67,7 +67,7 @@ public:
 		double btop = (lim * xysum) - (sumx * sumy);
 		double blower = (lim * squarex) - (sumx * sumx);
 		double b = btop / blower;
-		cout << "Enter the value for to predict the value of y : \n";
+		cout << "Enter the value of x in the formula y = m * x  + cfor to predict the value of y : \n";
 		cin >> input;
 		double linearregression = a + b * input;
 		double tstat = linearregression / r;
