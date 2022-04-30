@@ -14,10 +14,25 @@ class  testvalue
 public:
 	void tvalue() {
 		int lim;
-		double x[500] = { 43, 21, 25, 42, 57, 59 };
-		double y[500] = { 99, 65, 79, 75, 87, 81 };
+		double input;
+		double x[500];
+		double y[500];
 		cout << "Enter the amount of data : ";
 		cin >> lim;
+		if (lim > 500)
+		{
+			cout << "The amount of data had been limited to 500";
+		}
+		cout << "Enter the value for x : \n";
+		for (int i = 0; i < lim; i++)
+		{
+			cin >> x[i];
+		}
+		cout << "Enter the value for y : \n";
+		for (int i = 0; i < lim; i++)
+		{
+			cin >> y[i];
+		}
 		double sumx = 0;
 		sumx = accumulate(x, x + lim, sumx);
 		cout << "The sum for x values is : " << sumx << "\n";
@@ -46,7 +61,19 @@ public:
 		double r = top / lower;
 		double rtpart = sqrt((lim-2)/(1-(r * r)));
 		double tval = r * rtpart;
+		double atop = (sumy * squarex) - (sumx * xysum);
+		double alower = (lim * squarex) - (sumx * sumx);
+		double a = atop / alower;
+		double btop = (lim * xysum) - (sumx * sumy);
+		double blower = (lim * squarex) - (sumx * sumx);
+		double b = btop / blower;
+		cout << "Enter the value for to predict the value of y : \n";
+		cin >> input;
+		double linearregression = a + b * input;
+		double tstat = linearregression / r;
+		cout << "The linear regression is : " << linearregression << "\n";
 		cout << "The correlation coeffecient is : " << r << "\n";
 		cout << "The t-value is : " << tval << "\n";
+		cout << "The test statistic is : " << tstat << "\n";
 	}
 };
