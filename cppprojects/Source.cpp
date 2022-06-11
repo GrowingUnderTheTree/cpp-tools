@@ -12,6 +12,7 @@
 #include "entropy.h"
 #include "multiplereg.h"
 #include "linearregressiontestvalue.h"
+#include "definiteintegral.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -24,6 +25,7 @@ class password;
 class linearreg;
 class regr;
 class testvalue;
+class powerrule;
 
 
 int main() {
@@ -72,6 +74,10 @@ int main() {
 		else if (input == "testvalue") {
 			testvalue tv;
 			tv.tvalue();
+		}
+		else if (input == "definiteintegralpowerrule"){
+			powerrule pr;
+			pr.power();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";

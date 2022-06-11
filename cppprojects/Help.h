@@ -22,5 +22,6 @@ public:
 		//cout << "Enter 'factorial' to calculate factorial \n";
 		cout << "Enter 'linearregression' to calculate Linear regression \n";
 		cout << "Enter 'testvalue' to get the test value of the linear regression \n";
+		cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
 	}
 };
