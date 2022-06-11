@@ -30,4 +30,4 @@ public:
 		ans = left * (((pow(top, rule)) / rule) - ((pow(bottom, rule)) / rule));
 		cout << "The answer is : " << ans << "\n";
 	}
-};
+};// t
