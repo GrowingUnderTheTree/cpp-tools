@@ -23,5 +23,6 @@ public:
 		cout << "Enter 'linearregression' to calculate Linear regression \n";
 		cout << "Enter 'testvalue' to get the test value of the linear regression \n";
 		cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
+		cout << "Enter 'helpdefiniteintegral' for integration formulae and rules \n";
 	}
 };

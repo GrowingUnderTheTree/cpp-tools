@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef definiteintegral_h
 
 #endif // !definiteintegral_h
@@ -9,6 +9,7 @@
 #include <string>
 using namespace std;
 class powerrule;
+class integrationrule;
 
 class powerrule {
 public:
@@ -31,3 +32,27 @@ public:
 		cout << "The answer is : " << ans << "\n";
 	}
 };// t
+
+class integrationrule {
+public:
+	void show() {
+		cout << "Integration rules \n";
+		cout << "Common functions : \n";
+		cout << "Constant : ax + c \n";
+		cout << "variable x : x^2/2 + c \n";
+		cout << "power rule : x^n = x^n+1/n+1 \n";
+		cout << "Recipocral : 1/x = Ln|x| + c \n";
+		cout << "Exponential : e^x = e^x + c \n";
+		cout << "Exponential : a^x = a^x/Ln(a) + c \n";
+		cout << "Exponential : Ln(x) = x ln(x) − x + C \n";
+		cout << "Trigonometry : cos(x) = sin(x) + c \n";
+		cout << "Trigonometry : sin(x) = -cos(x) + c \n";
+		cout << "Trigonometry : sec^2(x) = tan(x) + c \n";
+		cout << "Rules : \n";
+		cout << "Multiplication by constant : integral(cf(x) dx) = c * integral(f(x) dx)\n";
+		cout << "Sum rule : integral(f+g dx) = integral(f dx) + integral(g dx)\n";
+		cout << "Difference rule : integral(f - g dx) = integral(f dx) - integral(g dx)\n";
+		cout << "integration by parts \n";
+		cout << "integration by substitution \n";
+	}
+};

@@ -26,7 +26,7 @@ class linearreg;
 class regr;
 class testvalue;
 class powerrule;
-
+class integrationrule;
 
 int main() {
 	while (true)
@@ -78,6 +78,10 @@ int main() {
 		else if (input == "definiteintegralpowerrule"){
 			powerrule pr;
 			pr.power();
+		}
+		else if (input == "helpdefiniteintegral"){
+			integrationrule ir;
+			ir.show();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";
