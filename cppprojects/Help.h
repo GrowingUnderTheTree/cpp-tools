@@ -18,11 +18,13 @@ public:
 		cout << "Enter 'createfile' to create a file \n";
 		cout << "Enter 'coeffecientcounter' to calculate coeffecient\n";
 		cout << "Enter 'passwordentropy' to calculate the entropy bits of your passwords\n";
-		//cout << "Enter 'factor' to factorize quadratics \n";
-		//cout << "Enter 'factorial' to calculate factorial \n";
 		cout << "Enter 'linearregression' to calculate Linear regression \n";
 		cout << "Enter 'testvalue' to get the test value of the linear regression \n";
 		cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
 		cout << "Enter 'helpdefiniteintegral' for integration formulae and rules \n";
+		cout << "Enter 'definiteintegraltrigidentity' to calculate definite integral of trigonomic identities \n";
 	}
 };
+
+//cout << "Enter 'factor' to factorize quadratics \n";
+//cout << "Enter 'factorial' to calculate factorial \n";

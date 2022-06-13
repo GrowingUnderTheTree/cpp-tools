@@ -27,6 +27,7 @@ class regr;
 class testvalue;
 class powerrule;
 class integrationrule;
+class Trigonometry;
 
 int main() {
 	while (true)
@@ -82,6 +83,10 @@ int main() {
 		else if (input == "helpdefiniteintegral"){
 			integrationrule ir;
 			ir.show();
+		}
+		else if (input == "definiteintegraltrigidentity") {
+			Trigonometry tr;
+			tr.calc();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";
