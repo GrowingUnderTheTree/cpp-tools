@@ -152,6 +152,7 @@
     <ClInclude Include="Help.h" />
     <ClInclude Include="linearregressiontestvalue.h" />
     <ClInclude Include="multiplereg.h" />
+    <ClInclude Include="nprncr.h" />
     <ClInclude Include="numberguess.h" />
     <ClInclude Include="pythagoras.h" />
     <ClInclude Include="sphere.h" />

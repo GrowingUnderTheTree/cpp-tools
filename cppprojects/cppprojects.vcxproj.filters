@@ -56,5 +56,8 @@
     <ClInclude Include="linearregressiontestvalue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="nprncr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -23,6 +23,8 @@ public:
 		cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
 		cout << "Enter 'helpdefiniteintegral' for integration formulae and rules \n";
 		cout << "Enter 'definiteintegraltrigidentity' to calculate definite integral of trigonomic identities \n";
+		cout << "Enter 'npr' to calculate permutations \n";
+		cout << "Enter 'ncr' to calculate combinations \n";
 	}
 };
 

@@ -13,6 +13,7 @@
 #include "multiplereg.h"
 #include "linearregressiontestvalue.h"
 #include "definiteintegral.h"
+#include "nprncr.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -28,6 +29,8 @@ class testvalue;
 class powerrule;
 class integrationrule;
 class Trigonometry;
+class npr;
+class ncr;
 
 int main() {
 	while (true)
@@ -87,6 +90,14 @@ int main() {
 		else if (input == "definiteintegraltrigidentity") {
 			Trigonometry tr;
 			tr.calc();
+		}
+		else if (input == "npr") {
+			npr perm;
+			perm.permutation();
+		}
+		else if (input == "ncr") {
+			ncr comb;
+			comb.combination();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";

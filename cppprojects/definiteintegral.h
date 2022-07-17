@@ -11,6 +11,7 @@ using namespace std;
 class powerrule;
 class integrationrule;
 class Trigonometry;
+class AdvancedIntegrationFormula;
 
 class powerrule {
 public:
@@ -57,6 +58,17 @@ public:
 		cout << "integration by substitution \n";
 		cout << "lists of trig identity available to calculate : \n";
 		cout << "sin\ncosin\nsec2x\ncsc2x\nsecxtanx\ncscxcotx\ntan\ncot\nsec\ncsc\n";
+		cout << "lists of advanced integration formulas (Enter correctly when typing in the formula to calculate): \n";
+		cout << "(1/x^2-a^2)dx \n";
+		cout << "(1/a^2-x^2)dx \n";
+		cout << "(1/x^2+a^2)dx \n";
+		cout << "(1/sqrt(x^2+a^2))dx \n";
+		cout << "(1/sqrt(x^2-a^2))dx \n";
+		cout << "(sqrt(x^2-a^2))dx \n";
+		cout << "(1/sqrt(a^2-x^2)dx \n";
+		cout << "(sqrt(a^2-x^2)dx \n";
+		cout << "(1/sqrt(x^2+a^2)dx \n";
+		cout << "(sqrt(x^2+a^2)dx \n";
 	}
 };
 
