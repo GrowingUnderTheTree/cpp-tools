@@ -14,6 +14,7 @@
 #include "linearregressiontestvalue.h"
 #include "definiteintegral.h"
 #include "nprncr.h"
+#include "derivatives.h"
 using namespace std;
 class numberguessr;
 class Help;
@@ -31,6 +32,8 @@ class integrationrule;
 class Trigonometry;
 class npr;
 class ncr;
+class rules;
+class calculator;
 
 int main() {
 	while (true)
@@ -98,6 +101,14 @@ int main() {
 		else if (input == "ncr") {
 			ncr comb;
 			comb.combination();
+		}
+		else if (input == "derivativecalculator") {
+			calculator calc;
+			calc.calc();
+		}
+		else if (input == "helpderivative") {
+			rules r;
+			r.show();
 		}
 		else {
 			cout << "Please type out 'help' for help \n";

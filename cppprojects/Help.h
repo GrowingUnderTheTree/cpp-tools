@@ -25,6 +25,8 @@ public:
 		cout << "Enter 'definiteintegraltrigidentity' to calculate definite integral of trigonomic identities \n";
 		cout << "Enter 'npr' to calculate permutations \n";
 		cout << "Enter 'ncr' to calculate combinations \n";
+		cout << "Enter 'derivativecalculator' to calculate derivatives \n";
+		cout << "Enter 'helpderivative' for help in derivatives \n";
 	}
 };
 

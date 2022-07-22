@@ -24,6 +24,7 @@
     <ProjectGuid>{42de7651-5b6f-4f06-9c07-1d8a84266622}</ProjectGuid>
     <RootNamespace>cppprojects</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Math tools</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,6 +147,7 @@
     <ClInclude Include="circarea.h" />
     <ClInclude Include="coeff.h" />
     <ClInclude Include="createfile.h" />
+    <ClInclude Include="derivatives.h" />
     <ClInclude Include="entropy.h" />
     <ClInclude Include="factorial.h" />
     <ClInclude Include="factoringquadratic.h" />
