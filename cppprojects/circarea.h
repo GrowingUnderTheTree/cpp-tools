@@ -13,7 +13,7 @@ public:
 		double x;
 		cout << "Enter the radius in Centimeters : ";
 		cin >> x;
-		double ans = 3.141 * x * x;
+		double ans = 3.14159 * x * x;
 		cout << "The area of the circle is : " << ans << " Centimeters. \n";
 	}
 };
