@@ -6,9 +6,11 @@
 #include <iostream>
 #include <numeric>
 #include <cmath>
+#include <string>
 using namespace std;
 class linearreg;
 class regr;
+class graphics;
 
 class linearreg {
 public:
@@ -59,6 +61,7 @@ public:
 	void linreg() {
 		double x[700];
 		double y[700];
+		double z[700];
 		int lim;
 		cout << "Enter the amount of value in the dataset : \n";
 		cin >> lim;
@@ -98,15 +101,21 @@ public:
 		cout << "The sum of xy is : " << xy << "\n";
 		double atop = (sumy * squarex) - (sumx * xy);
 		double alower = (lim * squarex) - (sumx * sumx);
-		double a = atop / alower;
+		double a = atop / alower;//c
 		double btop = (lim * xy) - (sumx * sumy);
 		double blower = (lim * squarex) - (sumx * sumx);
-		double b = btop / blower;
+		double b = btop / blower;//m
 		cout << "The coeffecient of a is : " << a << "\n";
 		cout << "The coeffecient of b is : " << b << "\n";
-		cout << "Linear regression formula is : y = a + b * x.\n Please enter a number in x or y values to predict the values of opposite values.\n";
+		cout << "Linear regression formula is : y = a + b * x.\n Please enter a number to predict y values.\n";
 		cin >> input;
-		double yes = a + b * input;
+		double yes = b * input + a;
 		cout << "The value is " << yes << "\n";
+		for (int i = 0; i < 100; i++)
+		{
+			yes = a + b * i;
+			z[i] = yes/1000;
+			cout << z[i] << "\n";
+		}
 	}
 };

@@ -148,6 +148,7 @@
     <ClInclude Include="coeff.h" />
     <ClInclude Include="createfile.h" />
     <ClInclude Include="derivatives.h" />
+    <ClInclude Include="drawline.h" />
     <ClInclude Include="entropy.h" />
     <ClInclude Include="factorial.h" />
     <ClInclude Include="factoringquadratic.h" />
@@ -156,6 +157,7 @@
     <ClInclude Include="multiplereg.h" />
     <ClInclude Include="nprncr.h" />
     <ClInclude Include="numberguess.h" />
+    <ClInclude Include="polynomial.h" />
     <ClInclude Include="pythagoras.h" />
     <ClInclude Include="sphere.h" />
   </ItemGroup>

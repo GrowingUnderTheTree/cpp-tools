@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <time.h>
@@ -15,7 +15,9 @@
 #include "definiteintegral.h"
 #include "nprncr.h"
 #include "derivatives.h"
-using namespace std;
+#include "polynomial.h"
+#include "binomialdistribution.h"
+#include "factoringquadratic.h"
 class numberguessr;
 class Help;
 class CircleArea;
@@ -34,14 +36,23 @@ class npr;
 class ncr;
 class rules;
 class calculator;
+class poly;
+class bdst;
+class quadratic;
 
 int main() {
 	while (true)
 	{
 		//int x;
-		string input;
-		cout << "Please enter the specific command to perform a specific task.\n Please type out 'help' for help : ";
-		cin >> input;
+		std::string input;
+		system("Color 0A");
+		std::cout << "CALCULATOR\n";
+		std::cout << "CCCCC    A    L     CCCCC U   U L        A    TTTTT OOOOO RRRRR \n"
+			"C       A A   L     C     U   U L       A A     T   O   O R   R \n"
+			"C      AAAAA  L     C     U   U L      AAAAA    T   O   O RRRRR \n"
+			"CCCCC A     A LLLLL CCCCC UUUUU LLLLL A     A   T   OOOOO R   R \n";
+		std::cout << "Please enter the specific command to perform a specific task.\n Please type out 'help' for help : ";
+		std::cin >> input;
 		if (input == "Numberguesser") {
 			numberguesr gues;
 			gues.guessit();
@@ -110,8 +121,20 @@ int main() {
 			rules r;
 			r.show();
 		}
+		else if (input == "linearpolynomial") {
+			poly p;
+			p.poly1d();
+		}
+		else if (input == "binomialdistribution") {
+			bdst bd;
+			bd.calc();
+		}
+		else if (input == "quads"){
+			quadratic qd;
+			qd.factor();
+		}
 		else {
-			cout << "Please type out 'help' for help \n";
+			std::cout << "Please type out 'help' for help \n";
 		}
 	}
 

@@ -5,28 +5,29 @@
 #define Help_h
 
 #include <iostream>
-using namespace std;
 class Help;
 
 class Help {
 public:
 	void helpme() {
-		cout << "Enter 'Numberguesser' for number guesser \n";
-		cout << "Enter 'Circlearea' to calculate the area of circle \n";
-		cout << "Enter 'Spherevolume' to calculate the volume of sphere \n";
-		cout << "Enter 'pythagoras' to calculate pythagoras theorem \n";
-		cout << "Enter 'createfile' to create a file \n";
-		cout << "Enter 'coeffecientcounter' to calculate coeffecient\n";
-		cout << "Enter 'passwordentropy' to calculate the entropy bits of your passwords\n";
-		cout << "Enter 'linearregression' to calculate Linear regression \n";
-		cout << "Enter 'testvalue' to get the test value of the linear regression \n";
-		cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
-		cout << "Enter 'helpdefiniteintegral' for integration formulae and rules \n";
-		cout << "Enter 'definiteintegraltrigidentity' to calculate definite integral of trigonomic identities \n";
-		cout << "Enter 'npr' to calculate permutations \n";
-		cout << "Enter 'ncr' to calculate combinations \n";
-		cout << "Enter 'derivativecalculator' to calculate derivatives \n";
-		cout << "Enter 'helpderivative' for help in derivatives \n";
+		std::cout << "Enter 'Numberguesser' for number guesser \n";
+		std::cout << "Enter 'Circlearea' to calculate the area of circle \n";
+		std::cout << "Enter 'Spherevolume' to calculate the volume of sphere \n";
+		std::cout << "Enter 'pythagoras' to calculate pythagoras theorem \n";
+		std::cout << "Enter 'createfile' to create a file \n";
+		std::cout << "Enter 'coeffecientcounter' to calculate coeffecient\n";
+		std::cout << "Enter 'passwordentropy' to calculate the entropy bits of your passwords\n";
+		std::cout << "Enter 'linearregression' to calculate Linear regression \n";
+		std::cout << "Enter 'testvalue' to get the test value of the linear regression \n";
+		std::cout << "Enter 'definiteintegralpowerrule' to calculate definite integral with power rule \n";
+		std::cout << "Enter 'helpdefiniteintegral' for integration formulae and rules \n";
+		std::cout << "Enter 'definiteintegraltrigidentity' to calculate definite integral of trigonomic identities \n";
+		std::cout << "Enter 'npr' to calculate permutations \n";
+		std::cout << "Enter 'ncr' to calculate combinations \n";
+		std::cout << "Enter 'derivativecalculator' to calculate derivatives \n";
+		std::cout << "Enter 'helpderivative' for help in derivatives \n";
+		std::cout << "Enter 'linearpolynomial' for linear polynomial equation problems \n";
+		std::cout << "Enter 'quads' to perform quadratic equations \n";
 	}
 };
 

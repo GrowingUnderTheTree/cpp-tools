@@ -13,6 +13,7 @@ class calculator;
 class rules {
 public:
 	void show() {
+		cout << "Example: 'Power rule' to calculate Power rule \n";
 		cout << "Power rule: f'x x^n = nx^n-1 \n";
 		cout << "Sine : f'x sin(x) = cos(x) \n";
 		cout << "Cosine : f'x cos(x) = -sin(x) \n";
