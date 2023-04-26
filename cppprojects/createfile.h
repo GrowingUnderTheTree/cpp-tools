@@ -6,7 +6,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+using std::string;
+using std::cout;
+using std::cin;
 class filecreate;
 
 class filecreate {
@@ -19,7 +21,7 @@ public:
 		cin >> y;
 		cout << "Enter the things you wish to say in the file : ";
 		cin >> z;
-		ofstream files(y + "." + x);
+		std::ofstream files(y + "." + x);
 		files << z;
 		files.close();
 	}
