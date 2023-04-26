@@ -26,8 +26,8 @@ public:
 		std::cout << "Enter 'ncr' to calculate combinations \n";
 		std::cout << "Enter 'derivativecalculator' to calculate derivatives \n";
 		std::cout << "Enter 'helpderivative' for help in derivatives \n";
-		std::cout << "Enter 'linearpolynomial' for linear polynomial equation problems \n";
-		std::cout << "Enter 'quads' to perform quadratic equations \n";
+		//std::cout << "Enter 'linearpolynomial' for linear polynomial equation problems \n";
+		//std::cout << "Enter 'quads' to perform quadratic equations \n";
 	}
 };
 
