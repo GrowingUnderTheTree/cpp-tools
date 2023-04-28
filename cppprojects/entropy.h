@@ -12,7 +12,7 @@ class password {
 public:
 	void passwordentropy() {
 		double r, l;
-		cout << "Enter the pool of unique character (Eg. A-Z = 26): \n";
+		cout << "Enter the pool of unique character (Eg. A-Z = 26, aA-zZ = 52): \n";
 		cin >> r;
 		cout << "Enter the numbers of characters in your password: \n";
 		cin >> l;
