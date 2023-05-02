@@ -45,12 +45,26 @@ int main() {
 	{
 		//int x;
 		std::string input;
-		system("Color 0A");
+		system("Color 0E");
 		std::cout << "CALCULATOR\n";
-		std::cout << "CCCCC    A    L     CCCCC U   U L        A    TTTTT OOOOO RRRRR \n"
-			"C       A A   L     C     U   U L       A A     T   O   O R   R \n"
-			"C      AAAAA  L     C     U   U L      AAAAA    T   O   O RRRRR \n"
-			"CCCCC A     A LLLLL CCCCC UUUUU LLLLL A     A   T   OOOOO R   R \n";
+		std::cout << R"(
+                                                                                                         
+                                                                                                         
+                        ,--,                             ,--,                  ___                       
+                      ,--.'|                           ,--.'|                ,--.'|_                     
+                      |  | :                      ,--, |  | :                |  | :,'   ,---.    __  ,-. 
+                      :  : '                    ,'_ /| :  : '                :  : ' :  '   ,'\ ,' ,'/ /| 
+   ,---.     ,--.--.  |  ' |      ,---.    .--. |  | : |  ' |     ,--.--.  .;__,'  /  /   /   |'  | |' | 
+  /     \   /       \ '  | |     /     \ ,'_ /| :  . | '  | |    /       \ |  |   |  .   ; ,. :|  |   ,' 
+ /    / '  .--.  .-. ||  | :    /    / ' |  ' | |  . . |  | :   .--.  .-. |:__,'| :  '   | |: :'  :  /   
+.    ' /    \__\/: . .'  : |__ .    ' /  |  | ' |  | | '  : |__  \__\/: . .  '  : |__'   | .; :|  | '    
+'   ; :__   ," .--.; ||  | '.'|'   ; :__ :  | : ;  ; | |  | '.'| ," .--.; |  |  | '.'|   :    |;  : |    
+'   | '.'| /  /  ,.  |;  :    ;'   | '.'|'  :  `--'   \;  :    ;/  /  ,.  |  ;  :    ;\   \  / |  , ;    
+|   :    :;  :   .'   \  ,   / |   :    ::  ,      .-./|  ,   /;  :   .'   \ |  ,   /  `----'   ---'     
+ \   \  / |  ,     .-./---`-'   \   \  /  `--`----'     ---`-' |  ,     .-./  ---`-'                     
+  `----'   `--`---'              `----'                         `--`---'                                 
+                                                                                                         
+)" <<  '\n';
 		std::cout << "Please enter the specific command to perform a specific task.\n Please type out 'help' for help : ";
 		std::cin >> input;
 		if (input == "Numberguesser") {
