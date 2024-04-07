@@ -14,33 +14,40 @@ class graphics;
 
 class linearreg {
 public:
+	//testing
 	double x[6] = {43, 21, 25, 42, 57, 59};
 	double y[6] = { 99, 65, 79, 75, 87, 81 };
 	void linreg() {
 		int input;
-		double sumx = 0;
-		sumx = accumulate(x, x + 6, sumx);
+		double sumx = 0;//initialize value of x
+		sumx = accumulate(x, x + 6, sumx);// sum up value x for equation
 		cout << "The sum of x is : " << sumx << "\n";
-		double sumy = 0;
-		sumy = accumulate(y, y + 6, sumy);
+		double sumy = 0;//initialize value of y 
+		sumy = accumulate(y, y + 6, sumy);// sum up value y for equation
 		cout << "The sum of y is : " << sumy << "\n";
-		double squarex = 0;
+		double squarex = 0;//initialize value of x squared
 		for (int i = 0; i < 6; i++)
 		{
 			squarex += x[i] * x[i];
-		}
-		double squarey = 0;
+		} // get sum of x squared
+		double squarey = 0;//initialize value of y squared
 		for (int i = 0; i < 6; i++)
 		{
 			squarey += y[i] * y[i];
-		}
+		} // get sum of y squared
 		cout << "The sum of square x is : " << squarex << " and the sum of square y is : " << squarey << "\n";
-		double xy = 0;
+		double xy = 0; // initialize value of x * y
 		for (int i = 0; i < 6; i++)
 		{
 			xy += x[i] * y[i];
-		}
+		}// get sum of x * y
 		cout << "The sum of xy is : " << xy << "\n";
+		/*
+		equation for gradient: Sy(Sx^2) - Sx(Sxy)/n(Sx^2) - (Sx)^2
+		equation for constant: n(Sxy) - Sx(Sy) / n(Sx^2) - (Sx)^2
+		y = gradient * x + constant
+		*/
+		//edit 7th April 2024 I have no idea on mean squared error by the time I created this so yeah
 		double atop = (sumy * squarex) - (sumx * xy);
 		double alower = (6 * squarex) - (sumx * sumx);
 		double a = atop / alower;
